@@ -1,0 +1,45 @@
+{
+  "name": "grpc-client",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "compile": "F:/Projects/DotNet/GrpcSolution/GrpcClient/node_modules/protoc/protoc/bin/protoc --plugin=F:/Projects/DotNet/GrpcSolution/GrpcClient/node_modules/protoc/protoc/bin/protoc-gen-ts=F:/Projects/DotNet/GrpcSolution/GrpcClient/node_modules/protoc/protoc/bin/protoc-gen-ts --js_out=import_style=commonjs,binary:F:/Projects/DotNet/GrpcSolution/GrpcClient/src/app/protos/product --ts_out=service=grpc-web:./src/app/protos/product/ -I ./src/app/protos/product/ ./src/app/protos/product/*.proto"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^14.2.0",
+    "@angular/common": "^14.2.0",
+    "@angular/compiler": "^14.2.0",
+    "@angular/core": "^14.2.0",
+    "@angular/forms": "^14.2.0",
+    "@angular/platform-browser": "^14.2.0",
+    "@angular/platform-browser-dynamic": "^14.2.0",
+    "@angular/router": "^14.2.0",
+    "@improbable-eng/grpc-web": "^0.15.0",
+    "google-protobuf": "^3.21.1",
+    "grpc": "^1.24.11",
+    "protoc": "^1.0.4",
+    "rxjs": "~7.5.0",
+    "ts-protoc-gen": "^0.15.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.11.4"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^14.2.5",
+    "@angular/cli": "~14.2.5",
+    "@angular/compiler-cli": "^14.2.0",
+    "@types/google-protobuf": "^3.15.6",
+    "@types/jasmine": "~4.0.0",
+    "jasmine-core": "~4.3.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.0.0",
+    "typescript": "~4.7.2"
+  }
+}
